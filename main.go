@@ -1,10 +1,26 @@
 package main
 
-import (
+/*import (
 	"fmt"
 )
+*/
 
-// Soll "Dinge" Rückmelden
-func main() {
-	fmt.Println("Hello World")
+type Stück struct {
+	Farbe string
+	Typ   string
+}
+
+type Schachfeld struct {
+	Feld [][]Stück
+}
+
+func NeueInstanz() *Schachfeld {
+	feld := make([][]Stück, 8)
+	for i := range feld {
+		feld[i] = make([]Stück, 8)
+		for j := range feld[i] {
+			feld[i][j] = Stück{Farbe: "Leer", Typ: "Leer"}
+		}
+	}
+	return &Schachfeld{Feld: feld}
 }
