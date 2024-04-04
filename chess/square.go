@@ -3,7 +3,7 @@ package chess
 type Square struct {
 	XCoord int
 	YCoord int
-	Piece  string
+	Piece  Piece
 }
 
 func ShowSquare(s Square) {
