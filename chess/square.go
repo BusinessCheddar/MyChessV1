@@ -1,13 +1,13 @@
 package chess
 
 type Square struct {
-	xCoord int
-	yCoord int
-	piece  string
+	XCoord int
+	YCoord int
+	Piece  string
 }
 
-func showSquare(s Square) {
-	if s.xCoord < 0 {
+func ShowSquare(s Square) {
+	if s.XCoord > 0 {
 		println("-")
 	} else {
 		return

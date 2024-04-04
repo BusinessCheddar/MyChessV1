@@ -8,5 +8,7 @@ import (
 
 func main() {
 	fmt.Println("Hello World")
-	s := chess.Square{xCoord: 1, yCoord: 2, piece: "king"}
+	s := chess.Square{XCoord: 1, YCoord: 2, Piece: "king"}
+
+	chess.ShowSquare(s)
 }
